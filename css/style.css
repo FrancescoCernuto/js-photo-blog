@@ -1,0 +1,60 @@
+/* Font */
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+/* Layout */
+.background-wall {
+    background-image: url(../img/wall.png);
+}
+
+.background-cork {
+    background-image:url(../img/cork.png) ;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.padding-y-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-lg-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.margin-x-2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.block {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: aqua;
+}
