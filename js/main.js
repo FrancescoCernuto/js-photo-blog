@@ -1,4 +1,10 @@
 // DOM Elements
-const postItContainerEl = document.querySelector("#notesContainer");
-const btnCloseLayoverEl = document.querySelector("#Closebtn");
-const layoverImage = document.querySelector("#Imageover");
+const notesContainerEl = document.querySelector("#notesContainer");
+const #ClosebtnEl = document.querySelector("#Closebtn");
+const Imageover = document.querySelector("#Imageover");
+const layoverEl = document.querySelector("#layover");
+
+let imageData = [];
+
+
+
