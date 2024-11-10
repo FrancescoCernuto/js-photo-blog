@@ -11,4 +11,7 @@ const loadImages = async () => {
         const response = await fetch("https://jsonplaceholder.typicode.com/photos?_limit=6");
 
         imageData = await response.json();
-    } 
+    }  catch (error) {
+        console.error("Errore nel caricamento delle immagini", error);
+    }
+};
