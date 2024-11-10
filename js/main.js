@@ -2,7 +2,7 @@
 const notesContainerEl = document.querySelector("#notesContainer");
 const #ClosebtnEl = document.querySelector("#Closebtn");
 const Imageover = document.querySelector("#Imageover");
-<<<<<<< HEAD
+
 const layoverEl = document.querySelector("#layover");
 
 let imageData = [];
@@ -16,3 +16,8 @@ const loadImages = async () => {
         console.error("Errore nel caricamento delle immagini", error);
     }
 };
+
+const renderContent = (items, targetElement) => {
+    targetElement.innerHTML = items.reduce((html, item) => {
+        return html + `
+
