@@ -9,54 +9,54 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+      />
+
 
     <!-- Font Awesome -->
-    <link
+    <!--<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    />-->
 
     <!-- Custom Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sriracha&display=swap"
+    rel="stylesheet"
+  />
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
-
 </head>
+<body>
+  <!-- # Header -->
+  <header class="page-header">
+    <div class="container">
+      <!-- title -->
+      <h1 class="py-4 fw-bold text-center title">ESTATE '24</h1>
+    </div>
+  </header>
 
-<body class="background-wall">
-    <section class="main-container">
-        <header>
-            <h1 class="title text-center italic fw-bold uppercase rubik mt-5 mb-5">
-                Estate '24
-            </h1>
-        </header>
-        <article class="background-cork padding-y-5">
-            <div id="notesContainer"
-                 class="grid-layout grid-cols-2 grid-cols-lg-3 gap-x-4 margin-x-2">
-            </div>
-        </article>
-    </section>
+  <!-- # Main -->
+  <main>
+    <div id="overlay" class="d-none">
+      <button class="btn btn-light fs-5" id="overlay-btn">Chiudi</button>
+      <div id="overlay-img">
+     </div>
+    </div>
 
-<div id="layover"
-class="layover d-none d-flex align-items-center justify-content-center flex-column gap-3"
->
-
-    <button class="btn btn-primary" id="Closebtn">Close</button>
-    <img src="#" alt="photo" id="Imageover" />
-  </div>
-</body>
-
-    
+    <div class="container mb-5">
+      <div class="row g-5 mx-5" id="card-output">
+      </div>
+    </div>
+  </main>
    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
