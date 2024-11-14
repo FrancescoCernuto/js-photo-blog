@@ -35,3 +35,19 @@ const stampGeneratedImageCards = (numCardToGen, stampEl) => {
     fetch(`https://jsonplaceholder.typicode.com/photos?_limit=${numCardToGen}`)
       .then((res) => res.json())
       .then((images) => {
+        images.forEach((img) => {
+            stampEl.innerHTML += `           
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <img class="card-pin" src="./img/pin.svg" alt="pin" />
+                <div class="card-body">
+                  <img src="${img.url}" alt="img" />
+                  <div class="pt-3 pb-1">${img.title}</div>
+                </div>
+              </div>
+            </div>`;
+        });
+
+        overlayHandler();+
+
+        stampGeneratedImageCards(cardToGen, cardStamp);
