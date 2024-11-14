@@ -16,4 +16,7 @@ const overlayHandler = () => {
 
             allCards.forEach((singleCard) => {  
                 singleCard.classList.add("d-none");
-            });         
+            });   
+            
+overlayImg.innerHTML = `<img src="${imagesEl.src}" alt="img" />`;
+ });
