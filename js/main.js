@@ -11,4 +11,9 @@ const overlayHandler = () => {
     allCards.forEach((singleCard) => {
         const imagesEl = singleCard.children[1].firstElementChild;
 
-        
+        singleCard.addEventListener("click", () => {
+            overlayEl.classList.remove("d-none");
+
+            allCards.forEach((singleCard) => {  
+                singleCard.classList.add("d-none");
+            });         
