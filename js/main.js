@@ -20,3 +20,18 @@ const overlayHandler = () => {
             
 overlayImg.innerHTML = `<img src="${imagesEl.src}" alt="img" />`;
  });
+
+ overlayBtn.addEventListener("click", () => {
+    overlayEl.classList.add("d-none");
+
+    allCards.forEach((singleCard) => {
+        singleCard.classList.remove("d-none");
+    });
+  });
+});
+};
+
+const stampGeneratedImageCards = (numCardToGen, stampEl) => {
+    fetch(`https://jsonplaceholder.typicode.com/photos?_limit=${numCardToGen}`)
+      .then((res) => res.json())
+      .then((images) => {
