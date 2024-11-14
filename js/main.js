@@ -1,0 +1,1 @@
+const cardStamp = document.getElementById("card-output");
